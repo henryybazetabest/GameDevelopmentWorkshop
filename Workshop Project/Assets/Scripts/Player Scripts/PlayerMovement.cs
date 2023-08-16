@@ -48,17 +48,36 @@ public class PlayerMovement : MonoBehaviour
 
         // flip the sprite to face right when moving right
 
-        if ((Movement.x == 0) && (Movement.y == 0))
+        if ((Movement.x == 0) && (Movement.y == 0))// sets walking false if idle 0,0
         {
             _animator.SetBool("isWalking", false);
         }
-        if ((Movement.x > 0) || (Movement.x < 0))
-            {
-            _animator.SetBool("isWalking", true);
-        }
-        if ((Movement.y > 0) || (Movement.y < 0))
+
+        if ((Movement.x > 0) || (Movement.x < 0))// sets walking true if walking on x
         {
             _animator.SetBool("isWalking", true);
+        }
+
+        if ((Movement.y > 0) || (Movement.y < 0))// sets walking true when walking on y
+        {
+            _animator.SetBool("isWalking", true);
+        }
+
+        if ((Movement.y > 0)) // sets walking up if y higher then 0
+        {
+            _animator.SetBool("isWalkingUp", true);
+            _animator.SetBool("isWalkingDown", false);
+        }
+
+        if (Movement.y < -.5)// sets walkingdown to true if y lower then 0
+        {
+            _animator.SetBool("isWalkingDown", true);
+            _animator.SetBool("isWalkingUp", false);
+        }
+        if (Movement.y == 0) //sets both to false
+        {
+            _animator.SetBool("isWalkingDown", false);
+            _animator.SetBool("isWalkingUp", false);
         }
 
 

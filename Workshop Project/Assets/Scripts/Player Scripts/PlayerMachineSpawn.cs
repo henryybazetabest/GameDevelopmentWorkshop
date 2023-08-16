@@ -7,21 +7,27 @@ public class PlayerMachineSpawn : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject[] Allobject;
-    public GameObject nearestOBJ;
+    public GameObject nearestOBJ = null;
     public float nearestDistance = 50;
     public float minimumDistanceThreshold = 8f;
-    public Rigidbody2D RedMachine;
-    public Rigidbody2D YellowMachine;
-    public Rigidbody2D BlueMachine;
+    
+    
+    public GameObject RedMachineRB;
+    public GameObject YellowMachineRB;
+    public GameObject BlueMachineRB;
     public GameObject ground;
     public PlayerEnergyPickup PlayerEnergyPickup;
+    public GameObject player; 
     public WorldColour worldColour;
+     
     private void Start()
     {
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        
 
-        PlayerEnergyPickup = playerObject.GetComponent<PlayerEnergyPickup>();
-        worldColour = playerObject.GetComponent<WorldColour>();
+        
+
+        PlayerEnergyPickup = player.GetComponent<PlayerEnergyPickup>();
+        
     }
 
     void Update()
@@ -55,17 +61,17 @@ public class PlayerMachineSpawn : MonoBehaviour
             // Instantiate the new machine if the player is not too close to any existing machine
             if (Input.GetKeyDown(KeyCode.S) &&  ground.GetComponent<SpriteRenderer>().sprite == worldColour.RedSprite && PlayerEnergyPickup.RedEnergyCount > 9)
             {
-                Instantiate(RedMachine, transform.position, Quaternion.identity);
+                Instantiate(RedMachineRB, transform.position, Quaternion.identity);
                 PlayerEnergyPickup.RedEnergyCount -= 10;
             }
             else if (Input.GetKeyDown(KeyCode.S) && ground.GetComponent<SpriteRenderer>().sprite == worldColour.BlueSprite && PlayerEnergyPickup.BlueEnergyCount > 9)
             {
-                Instantiate(BlueMachine, transform.position, Quaternion.identity);
+                Instantiate(BlueMachineRB, transform.position, Quaternion.identity);
                 PlayerEnergyPickup.BlueEnergyCount -= 10;
             }
             else if (Input.GetKeyDown(KeyCode.S) &&  ground.GetComponent<SpriteRenderer>().sprite == worldColour.YellowSprite && PlayerEnergyPickup.YellowEnergyCount > 9)
             {
-                Instantiate(YellowMachine, transform.position, Quaternion.identity);
+                Instantiate(YellowMachineRB, transform.position, Quaternion.identity);
                 PlayerEnergyPickup.YellowEnergyCount -= 10;
             }
             else

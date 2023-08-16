@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 591344087617171659}
   - component: {fileID: 3336406247953142372}
   - component: {fileID: 6011409954386730116}
-  - component: {fileID: 4263737008052199539}
+  - component: {fileID: -3913896060521119776}
   m_Layer: 0
   m_Name: redEnemy
   m_TagString: redEnemy
@@ -130,9 +130,9 @@ Transform:
   m_GameObject: {fileID: 1975670895886894552}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0.05113, y: -0.088316, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.52065}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2135590506214617465}
   m_Father: {fileID: 0}
@@ -199,11 +199,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975670895886894552}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -216,7 +216,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &6011409954386730116
 MonoBehaviour:
@@ -230,17 +230,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6210a99345942d4abc4afef3c7fa8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  Objective: {fileID: 2646519454582013020, guid: c0130b9516336a34e8ec879dc307b3b7, type: 3}
+  speed: 1
   maxHP: 3
   currentHP: 3
   damage: 1
   EnemyHPBar: {fileID: 8108678808758531315}
-  chance: 0.808
   Energies:
   - {fileID: 472682856192114556, guid: 7b014694c226a5d428bf6774eb95e487, type: 3}
   - {fileID: 472682856192114556, guid: af3c7194f5de7334b939f25bce7ce2ff, type: 3}
   - {fileID: 472682856192114556, guid: c5bc12ce4db469c418f3335d14c501ad, type: 3}
---- !u!61 &4263737008052199539
+  pipeAvoidance: 0
+  chance: 0.808
+--- !u!61 &-3913896060521119776
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -274,7 +276,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.050302, y: 0.086885214}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -284,7 +286,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 1.6701033, y: 3.8215613}
   m_EdgeRadius: 0
 --- !u!1 &6149477351228273792
 GameObject:

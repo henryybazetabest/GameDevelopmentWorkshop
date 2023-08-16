@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - YUI
+  - collectable
+  - BUI
+  - RUI
+  - RM
+  - Machine
+  - blueEnemy
+  - redEnemy
+  - yellowEnemy
+  - gameManager
+  - ground
+  - RedUI
+  - YellowUI
+  - BlueUI
+  - Pipe
   layers:
   - Default
   - TransparentFX

@@ -370,7 +370,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Background_Pipes_0: -7849344237698701143
+      Background_Pipes_1: 8213093429347336576
+      Background_Pipes_10: -433678738362839531
+      Background_Pipes_2: -4583079940861079854
+      Background_Pipes_3: 5261535003353580769
+      Background_Pipes_4: 4129309934286857058
+      Background_Pipes_5: 2428594936648766779
+      Background_Pipes_6: 8799260321147348655
+      Background_Pipes_7: 8463597128101949965
+      Background_Pipes_8: -596034991151720386
+      Background_Pipes_9: 6456993762079094754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

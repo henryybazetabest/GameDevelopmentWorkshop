@@ -9,18 +9,19 @@ public class EnergyUpdateScript : MonoBehaviour
     public PlayerEnergyPickup playerEnergyPickup;
     
     public TextMeshProUGUI EnergyCountTextUpdate;
+    public GameObject player;
     
 
     private void Start()
     {
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        
          
-        playerEnergyPickup = playerObject.GetComponent<PlayerEnergyPickup>();
+        playerEnergyPickup = player.GetComponent<PlayerEnergyPickup>();
         
 
     }
 
-
+    
     private void Update()
     {
         // Access the RedEnergyCount value from the PlayerEnergyPickup script

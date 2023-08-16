@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8514265447741367159}
-  - component: {fileID: 3596468695311882268}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: gameManager
@@ -32,22 +31,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3596468695311882268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204919191695469203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 445773fc33de4594d9a91f0a919a4d1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ground: {fileID: 0}
-  RedMachine: {fileID: 2947616809362858091, guid: 6b9278f0d57173c4baa2d3b44c9dd69d, type: 3}
-  BlueMachine: {fileID: 2947616809362858091, guid: f5ddd640bcf4d524b8c82c867f92d844, type: 3}
-  YellowMachine: {fileID: 2947616809362858091, guid: 0ec93689e0baf4b47a0788c3ab07121e, type: 3}
-  RedSprite: {fileID: 8771752724992574470, guid: e3a5d58924a2efd4e8ab6c928d358a66, type: 3}
-  BlueSprite: {fileID: 8449240525697324518, guid: 8a0137eda8ceeb7478f7bdd4958cba2f, type: 3}
-  YellowSprite: {fileID: 1823433307520837061, guid: 519c752bf5f42304a83363b1981ec3c9, type: 3}

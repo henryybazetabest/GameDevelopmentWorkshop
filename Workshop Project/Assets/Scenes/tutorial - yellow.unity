@@ -830,6 +830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerEnergyPickup: {fileID: 1413817784}
   EnergyCountTextUpdate: {fileID: 364072193}
+  player: {fileID: 0}
 --- !u!1 &456286183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,7 +3161,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1135998982}
-  - component: {fileID: 1135998981}
   - component: {fileID: 1135998983}
   m_Layer: 0
   m_Name: world
@@ -3169,19 +3169,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1135998981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135998980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ced70201b8c9f1e4690ebf753c59cbae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 0
 --- !u!4 &1135998982
 Transform:
   m_ObjectHideFlags: 0
@@ -3410,17 +3397,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1559107749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1191931514 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3596468695311882268, guid: f88b2ad780f631f43aa412eb67ead371, type: 3}
-  m_PrefabInstance: {fileID: 9173373875430078966}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857668278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 445773fc33de4594d9a91f0a919a4d1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1191931516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3433,8 +3409,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7acbd4768a3f4da448ab9a6884d7bda3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectivePrefab: {fileID: 1681986882}
-  Chroma: {fileID: 1413817777}
+  Objective: {fileID: 0}
+  GameOverPanel: {fileID: 0}
+  ObjectiveHealth: 0
 --- !u!114 &1191931517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3839,6 +3816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerEnergyPickup: {fileID: 1413817784}
   EnergyCountTextUpdate: {fileID: 1322905261}
+  player: {fileID: 0}
 --- !u!1 &1413817777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3992,12 +3970,13 @@ MonoBehaviour:
   nearestOBJ: {fileID: 0}
   nearestDistance: 50
   minimumDistanceThreshold: 3
-  RedMachine: {fileID: 8765568673369110716, guid: c3b0318b36f5df24fbcd79e5fef3b55f, type: 3}
-  YellowMachine: {fileID: 2322467389694103452, guid: e9bf8e3fd4e536b468c7aa99d81bf12e, type: 3}
-  BlueMachine: {fileID: 8765568673369110716, guid: 108e6559c57a0954ba89802d3bf5d6a5, type: 3}
+  RedMachineRB: {fileID: 0}
+  YellowMachineRB: {fileID: 0}
+  BlueMachineRB: {fileID: 0}
   ground: {fileID: 1767027237}
   PlayerEnergyPickup: {fileID: 1413817784}
-  worldColour: {fileID: 1191931514}
+  player: {fileID: 0}
+  worldColour: {fileID: 0}
 --- !u!114 &1413817784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4478,6 +4457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerEnergyPickup: {fileID: 1413817784}
   EnergyCountTextUpdate: {fileID: 1509207501}
+  player: {fileID: 0}
 --- !u!1 &1559107748
 GameObject:
   m_ObjectHideFlags: 0
@@ -5074,7 +5054,6 @@ MonoBehaviour:
   spawnArea: {x: 40, y: 40}
   spawnTimer: 10
   timeBetweenWaves: 20
-  enemiesPerWave: 5
   objective: {fileID: 1681986882}
   waveIndex: 1
 --- !u!4 &1899677923

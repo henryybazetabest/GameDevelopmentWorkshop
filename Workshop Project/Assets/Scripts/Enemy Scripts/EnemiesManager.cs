@@ -7,7 +7,7 @@ public class EnemiesManager : MonoBehaviour
     public Vector2 spawnArea;
     public float spawnTimer = 2f;
     public float timeBetweenWaves = 20f;
-    public int enemiesPerWave = 5;
+    //public int enemiesPerWave = 5;
     public GameObject objective;
 
     public int waveIndex ;
@@ -16,6 +16,7 @@ public class EnemiesManager : MonoBehaviour
 
     private void Start()
     {
+
         StartNextWave();
     }
 
@@ -33,10 +34,20 @@ public class EnemiesManager : MonoBehaviour
     private IEnumerator SpawnWave()
     {
         
-        for (int i = 0; i < waveIndex * 5; i++)
+        for (int i = 0; i < Random.Range(10,25); i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(spawnTimer);
+            if(waveIndex < 5)
+            {
+                yield return new WaitForSeconds(spawnTimer);
+
+            }
+            if (waveIndex > 5 && waveIndex < 10)
+            {
+                yield return new WaitForSeconds(spawnTimer + Random.Range(1, 5));
+            }
+
+
         }
     }
 
@@ -45,8 +56,8 @@ public class EnemiesManager : MonoBehaviour
         Vector3 position = new Vector3(Random.Range(-spawnArea.x, spawnArea.x), Random.Range(-spawnArea.y, spawnArea.y), 0f);
         int randomIndex = Random.Range(0, enemyPrefabs.Length);
         GameObject newEnemy = Instantiate(enemyPrefabs[randomIndex], position, Quaternion.identity);
-        newEnemy.GetComponent<Enemy>().SetTarget(objective);
-        Debug.Log("Enemy Spawned");
+        newEnemy.GetComponent<Enemy>(); 
+        
     }
 
     private void StartNextWave()
