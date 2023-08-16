@@ -202,11 +202,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      PropAssertsCrystel2yellow_0: 3360513364251264137
-      PropAssertsCrystel2yellow_1: 8411034401527856463
-      PropAssertsCrystel2yellow_2: 1965341869305873468
-      PropAssertsCrystel2yellow_3: -7259737923252955317
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
