@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 472682856192114552}
   - component: {fileID: 5114871301653127194}
   - component: {fileID: 2798421526314119478}
+  - component: {fileID: 745732697139208589}
   m_Layer: 0
   m_Name: blueEnergy 1
   m_TagString: collectable
@@ -190,3 +191,16 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &745732697139208589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472682856192114556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce1d7c7a80a1a44ebae8339e726b34e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 30

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 472682856192114552}
   - component: {fileID: -3249839041345684690}
   - component: {fileID: -7062536227137141778}
+  - component: {fileID: 250984376540768069}
   m_Layer: 0
   m_Name: redEnergy 1
   m_TagString: collectable
@@ -190,3 +191,16 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &250984376540768069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472682856192114556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce1d7c7a80a1a44ebae8339e726b34e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 30

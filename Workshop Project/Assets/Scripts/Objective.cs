@@ -13,6 +13,7 @@ public class Objective : MonoBehaviour
     public GameObject ObjectiveHealth;
     public Sprite normalhealthbar;
     public Sprite crackedhealthbar;
+    Enemy enemy;
 
     public void TakeDamage(int damage)
     {
@@ -27,7 +28,7 @@ public class Objective : MonoBehaviour
         
         if (currentHp <= 0)
         {
-            UnityEngine.Debug.Log("Character is dead GAME OVER");
+            
         }
         hpBar.SetState(currentHp, maxHp);
     }

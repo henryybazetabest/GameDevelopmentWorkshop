@@ -22,10 +22,14 @@ public class Enemy : MonoBehaviour
 
     [Range(0f, 1f)]
     public float chance = 0.6f;
+
+    
+
     public GameObject[] Machines;
     public float MinimumDistance = 8f;
     public float DistancetoMachine;
     public GameObject machine;
+
 
 
 
@@ -38,15 +42,20 @@ public class Enemy : MonoBehaviour
         rgdbd2d = GetComponent<Rigidbody2D>();
     }
 
-    public void SetTarget(GameObject target)
-    {
-        targetGameobject = target;
-        targetDestination = target.transform;
-    }
+
 
 
     private void FixedUpdate()
     {
+
+            
+           Objective = GameObject.FindGameObjectWithTag("Finish");
+           targetGameobject = Objective;
+            targetDestination = Objective.transform;
+            
+
+        
+
         GameObject[] machines = GameObject.FindGameObjectsWithTag("RM");
 
         float shortestDistance = Mathf.Infinity;
@@ -71,6 +80,7 @@ public class Enemy : MonoBehaviour
             }
 
         }
+
 
         Vector3 direction = (targetDestination.position - transform.position).normalized;
         if (pipeAvoidance)
