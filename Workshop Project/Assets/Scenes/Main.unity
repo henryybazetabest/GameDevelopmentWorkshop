@@ -7282,24 +7282,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 1678812258}
   - component: {fileID: 1678812260}
   - component: {fileID: 1678812259}
   m_Layer: 5
   m_Name: OPTION HEADING
   m_TagString: Untagged
-=======
-  - component: {fileID: 1681986884}
-  - component: {fileID: 1681986883}
-  - component: {fileID: 1681986887}
-  - component: {fileID: 1681986886}
-  - component: {fileID: 1681986885}
-  - component: {fileID: 1681986888}
-  m_Layer: 0
-  m_Name: Objective
-  m_TagString: Finish
->>>>>>> bb44a14d982db8caebf677fb24fee4c817d038c5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
