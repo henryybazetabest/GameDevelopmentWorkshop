@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedMutantSide_0019_0: 8036354037733900831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

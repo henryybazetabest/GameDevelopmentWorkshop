@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowMutantDown_Ani_0029_0: -3436316449008481690
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

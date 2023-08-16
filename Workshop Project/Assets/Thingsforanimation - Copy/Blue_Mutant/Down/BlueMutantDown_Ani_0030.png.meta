@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueMutantDown_Ani_0030_0: 1777861269038177185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

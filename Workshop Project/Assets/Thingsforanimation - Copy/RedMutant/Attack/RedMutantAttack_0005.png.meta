@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedMutantAttack_0005_0: -6763665646908251372
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

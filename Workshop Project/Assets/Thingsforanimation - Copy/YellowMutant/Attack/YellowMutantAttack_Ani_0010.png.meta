@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowMutantAttack_Ani_0010_0: 5476015282209494797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

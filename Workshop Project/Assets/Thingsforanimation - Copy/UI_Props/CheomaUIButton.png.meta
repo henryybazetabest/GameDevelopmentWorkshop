@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CheomaUIButton_0: -8113974264904650333
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

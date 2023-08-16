@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedMutantDown_Ani_0018_0: -14720619672778555
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

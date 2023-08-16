@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BlueMutantSide_Ani_0018_0: -8621346469239308469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

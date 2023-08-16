@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CheomaUIEnergyUiYellow_0: -695411073082532674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

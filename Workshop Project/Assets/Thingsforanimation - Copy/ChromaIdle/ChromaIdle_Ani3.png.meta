@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ChromaIdle_Ani3_0: 2604295203028546991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

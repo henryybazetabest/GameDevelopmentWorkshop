@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowMutantSide_Ani_0011_0: 8194523176087193202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
